@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style type="text/css">
+#contactform {
+width: 700px;
+background:#76b22f;
+margin:20px;
+padding:10px 20px;
+font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+border: 1px solid #597c30;
+border-radius:10px;
+box-shadow: 0 0 5px rgba(0,0,0, .65);
+}
+#contactform fieldset{
+border:none;
+}
+#contactform legend{
+display:none;
+}
+#contactform input, #contactform textarea{
+display:block;
+padding:5px;
+border-radius:5px;
+margin-bottom:20px;
+margin-top:5px;
+background:#e4e2ce;
+border:2px solid #3084a4;
+font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+}
+#contactform input#yourname, #contactform input#email{
+width:500px;
+}
+#contactform textarea#message{
+background:url(assets/forms01.jpg) 98% 99% no-repeat #e4e2ce;
+width:500px;
+height:200px;
+}
+#contactform input:focus, #contactform textarea:focus{
+border:2px solid #b21d1f;
+background:#fff;
+}
+#contactform label {
+padding:4px 10px 4px 4px;
+font-size:1.2em;
+color:#fff;
+}
+#contactform input#sendbutton {
+background: #3084a4;
+border:1px solid #3084a4;
+color:#fff;
+text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
+padding:5px 10px;
+font-size:1.2em;
+margin-left:30px;
+border-radius:5px;
+box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 4px 4px #5d6257;
+}
+#contactform input#sendbutton:active{
+border:1px solid #3084a4;
+}
+#contactform input#sendbutton:hover, #contactform input#sendbutton:focus{
+box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 1px 4px #5d6257;
+cursor:pointer;
+}
+#contactform p{
+font-size:85%;
+line-height:1.6em;
+margin-bottom:15px;
+color:#444;
+}
+#contactform h3{
+color:#fff;
+font-family: 'Happy Monkey', Arial, Helvetica, sans-serif;
+text-shadow: 0px 1px 1px #555;
+font-size:1.6em;
+margin-bottom:20px;
+letter-spacing:.05em;
+}
+/*** Finally - force IE8 and lower to use some CSS3 ***/
+/**see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+#contactform, #contactform input, #contactform textarea{
+behavior: url(pie/PIE.htc); 
+}
+
+
+</style>
+</head>
+<body>
+<form id="contactform" action="Login" method='post'>
+<fieldset>
+<legend>Registration Form</legend>
+<h3>Welcome To Prestige Point</h3>
+<label for="id">ID:</label> <!--contents of 'for' must be the same as 'name' on the input on next line-->
+<input type="text" name="id" id="id" required>
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" required>
+
+<input type="submit" value="Log In" id="sendbutton">
+</fieldset>
+</form>
+</body>
+</html>

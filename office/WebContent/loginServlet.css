@@ -1,0 +1,18 @@
+#submit {
+background: #3084a4;
+border:1px solid #3084a4;
+color:#fff;
+text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
+padding:5px 10px;
+font-size:1.2em;
+margin-left:30px;
+border-radius:5px;
+box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 4px 4px #5d6257;
+}
+#submit:active{
+border:1px solid #3084a4;
+}
+#submit:hover, #submit:focus{
+box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 1px 4px #5d6257;
+cursor:pointer;
+}
