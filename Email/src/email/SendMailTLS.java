@@ -17,8 +17,8 @@ public class SendMailTLS
 	public SendMailTLS(String employeeEmail)
 	{
 
-		final String username = "vymishra112@gmail.com";
-		final String password = "mishravinay112";
+		final String username = "*********************************@gmail.com";
+		final String password = "***************************";
 
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
